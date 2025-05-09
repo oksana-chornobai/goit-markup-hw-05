@@ -682,7 +682,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.popup-close:hover svg
+.popup-close:hover svg,
 .popup-close:focus svg {
     fill: #fff;
 }
@@ -737,6 +737,7 @@ margin-bottom: 16px;
     width: 100%;
     padding-left: 38px;
     background-color: transparent;
+    outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -763,6 +764,10 @@ margin-bottom: 16px;
     color: rgba(46, 47, 66, 0.4);
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.popup-comment:focus {
+    border-color: #4d5ae5;
 }
 
 .popup-input:focus {
@@ -818,13 +823,6 @@ fill: #F4F4FD;
     fill: #f4f4fd;
 }
 
-/* .checkbox-text {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16667;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
-} */
 
 .privacy-policy {
     line-height: 1.33333;
