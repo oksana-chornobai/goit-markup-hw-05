@@ -465,7 +465,102 @@
             </li>
           </ul>
         </div>
+        <div class="footer-input-cont">
+          <p class="footer-input-text">Subscribe</p>
+          <form class="footer-form">
+            <label class="footer-inp-label">
+              <input type="email" class="footer-inp" placeholder="E-mail" />
+            </label>
+            <button type="submit" class="footer-button">
+              Subscribe
+              <svg class="footer-button-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <button type="button" class="popup-close">
+          <svg width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h3 class="popup-title">
+          Leave your contacts and we will call you back
+        </h3>
+        <form>
+          <label for="form-username" class="popup-label">Name</label>
+          <div class="popup-input-wrapper">
+            <svg width="24" height="24" class="popup-icon">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+            <input
+              type="text"
+              id="form-username"
+              name="form-user"
+              class="popup-input"
+            />
+          </div>
+          <label for="form-phone" class="popup-label">Phone</label>
+          <div class="popup-input-wrapper">
+            <svg width="24" height="24" class="popup-icon">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+            <input
+              type="tel"
+              id="form-phone"
+              name="form-user"
+              class="popup-input"
+            />
+          </div>
+          <label for="form-email" class="popup-label">Email</label>
+          <div class="popup-input-wrapper">
+            <svg width="24" height="24" class="popup-icon">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+            <input
+              type="email"
+              id="form-email"
+              name="form-user"
+              class="popup-input"
+            />
+          </div>
+          <label for="form-comment" class="popup-label">Comment</label>
+          <div class="popup-input-wrapper">
+            <textarea
+              id="form-comment"
+              name="form-user"
+              class="popup-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="popup-checkbox-container">
+            <input
+              type="checkbox"
+              id="user-privacy"
+              name="privacy-policy-accept"
+              value="true"
+              class="custom-checkbox-input visually-hidden"
+            />
+            <label for="user-privacy" class="checkbox-label">
+              <span class="checkbox-icon-wrapper">
+                <svg class="checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+              </span>
+              <span class="checkbox-text"
+                >I accept the terms and conditions of the
+                <a class="privacy-policy" href="#">Privacy Policy</a></span
+              >
+            </label>
+          </div>
+          <button type="submit" class="form-button">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
